@@ -21,14 +21,13 @@ Additive white Gaussian noise is added to chromagrams at a low level to make the
 Model Architectures
 
 1. CNN for Spectrograms:
-
 A convolutional neural network (CNN) architecture specifically designed for analyzing spectrograms is implemented.
 The CNN model captures spatial relationships within the spectrogram image, potentially identifying patterns indicative of emotion.
-2. CNN for Chromagrams:
 
+2. CNN for Chromagrams:
 A separate CNN architecture tailored for chromagrams is created.
 This model can learn from the pitch information encoded in the chromagram to differentiate emotions.
-3. CNN with Fused Features:
 
+3. CNN with Fused Features:
 Features extracted from both spectrograms and chromagrams are concatenated and fed into a single CNN model.
 This approach aims to leverage the complementary information from both representations, potentially leading to improved recognition accuracy.
