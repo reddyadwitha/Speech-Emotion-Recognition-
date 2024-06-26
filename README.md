@@ -7,15 +7,14 @@ The RAVDESS dataset is used, containing audio recordings of various emotions (ne
 Data Preprocessing
 
 Spectrogram Generation:
-
 Audio files are converted into spectrograms, which represent the frequency content of the audio signal over time.
 Libraries like Librosa or torchaudio can be used for this purpose.
-Chromagram Generation:
 
+Chromagram Generation:
 Chromagrams capture the tonal content of the audio signal, focusing on the presence of specific pitches.
 Similar libraries can be employed to create chromagrams.
-Data Augmentation:
 
+Data Augmentation:
 SpecAugment is applied to spectrograms to introduce controlled variations in time, frequency, and mask domain, enhancing model robustness.
 Additive white Gaussian noise is added to chromagrams at a low level to make the model less sensitive to noise present in real-world data.
 Model Architectures
